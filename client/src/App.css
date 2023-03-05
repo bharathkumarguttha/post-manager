@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+}
+
+body {
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    background-image: linear-gradient(#B24592 0%, #663399 100%);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header a.logo {
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: oblique;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    gap: 24px;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+div.post {
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+}
+
+div.post div.texts h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: rebeccapurple;
+}
+
+div.post div.texts a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div.post p.summary {
+    margin: 0;
+    line-height: 1.8rem;
+}
+
+form.login,
+form.register {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form.login button,
+form.register button {
+    width: 150px;
+    margin-left: 30%;
+    margin-top: 1rem;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px 7px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.user-type {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+}
+
+button:not(.delete-btn) {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    background-color: rebeccapurple;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 0;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+form.login h1,
+form.register h1 {
+    text-align: center;
+    color: rebeccapurple;
+}
+
+div.post-page {
+    text-align: center;
+}
+
+div.post-page a {
+    color: #333;
+    text-decoration: underline;
+}
+
+div.post-page h1 {
+    color: rebeccapurple;
+    margin: 10px 0 5px;
+}
+
+div.post-page time {
+    display: block;
+    font-size: 1rem;
+    color: #aaa;
+    margin: 10px 0;
+}
+
+div.post-page div.author {
+    margin-bottom: 20px;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+div.content p {
+    line-height: 1.7rem;
+    margin: 30px 0;
+}
+
+div.content li {
+    margin-bottom: 10px;
+}
+
+div.edit-row {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+}
+
+div.action-row {
+    height: 3.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+div.delete-row {
+
+    background: #333;
+    color: white;
+}
+
+div.post-page a.edit-btn,
+div.post-page .delete-row {
+    background-color: rebeccapurple;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.create-post-form,
+.update-post-form {
+    max-width: 720px;
+    margin: 5rem auto;
+}
+
+.create-post-form button,
+.update-post-form button {
+    width: 150px;
+    margin-left: 35%;
+    margin-top: 1rem;
+}
+
+.user-select-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a svg {
+    height: 20px;
+}
