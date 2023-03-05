@@ -35,16 +35,21 @@ export default function EditPost() {
   }
 
   return (
-    <form className="update-post-form" onSubmit={updatePost}>
-      <input name="title"
-        placeholder={'Title'}
-        value={title}
-        onChange={e => setTitle(e.target.value)} />
-      <textarea name="summary"
-        placeholder={'Summary'}
-        value={summary}
-        onChange={e => setSummary(e.target.value)} />
-      <button>Update post</button>
-    </form>
+    <div className="update-post-container">
+      <form className="update-post-form" onSubmit={updatePost}>
+        <input name="title"
+          placeholder={'Title'}
+          value={title}
+          onChange={e => setTitle(e.target.value)}
+          required />
+        <textarea name="summary"
+          placeholder={'Summary'}
+          value={summary}
+          onChange={e => setSummary(e.target.value)}
+          required />
+        <button>Update post</button>
+      </form>
+      <button className="cancel-btn" onClick={() => setRedirect(true)}>Cancel</button>
+    </div>
   );
 }

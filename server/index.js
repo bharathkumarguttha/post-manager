@@ -12,7 +12,7 @@ const Post = require('./models/Post');
 
 
 const salt = bcrypt.genSaltSync(10);
-const secret = 'asdfe45we45w345wegw345werjktjwertkj';
+const secret = 'secret';
 
 app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
 app.use(express.json());
@@ -133,7 +133,7 @@ app.delete('/post', async (req, res) => {
       if (err) throw err;
       const { id } = req.body;
       const postDoc = await Post.findById(id);
-      const isAuthor = JSON.stringify(postDoc.author) === JSON.stringify(info.id);
+      const isAuthor = JSON.stringify(postDoc.author) === JSON.stringify(info.id) || info.type === 'admin';
       if (!isAuthor) {
         return res.status(400).json('you are not the author');
       }

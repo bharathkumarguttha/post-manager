@@ -3,7 +3,7 @@ const { Schema, model } = mongoose;
 
 const PostSchema = new Schema({
   title: { type: String, required: true, unique: true },
-  summary: String,
+  summary: { type: String, required: true },
   author: { type: Schema.Types.ObjectId, ref: 'User' },
 }, {
   timestamps: true,

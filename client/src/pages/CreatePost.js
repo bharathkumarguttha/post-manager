@@ -27,11 +27,13 @@ export default function CreatePost() {
       <input name="title"
         placeholder={'Title'}
         value={title}
-        onChange={e => setTitle(e.target.value)} />
+        onChange={e => setTitle(e.target.value)}
+        required />
       <textarea name="summary"
         placeholder={'Summary'}
         value={summary}
-        onChange={e => setSummary(e.target.value)} />
+        onChange={e => setSummary(e.target.value)}
+        required />
       <button>Create post</button>
     </form>
   );

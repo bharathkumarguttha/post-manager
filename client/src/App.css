@@ -88,6 +88,10 @@ textarea {
     background-color: #fff;
 }
 
+textarea {
+    min-height: 270px;
+}
+
 .user-type {
     margin: 0.5rem 0;
     padding: 0.5rem;
@@ -112,8 +116,9 @@ button:not(.delete-btn) {
     border: none;
     color: white;
     display: inline-flex;
-    align-items: center;
     gap: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 form.login h1,
@@ -170,12 +175,6 @@ div.action-row {
     justify-content: center;
 }
 
-div.delete-row {
-
-    background: #333;
-    color: white;
-}
-
 div.post-page a.edit-btn,
 div.post-page .delete-row {
     background-color: rebeccapurple;
@@ -205,6 +204,27 @@ div.post-page .delete-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.summary-container .summary {
+    max-width: 720px;
+    margin: auto;
+    text-align: justify;
+}
+
+.update-post-container {
+    max-width: 720px;
+    margin: auto;
+}
+
+.update-post-form {
+    margin-bottom: 0;
+}
+
+.update-post-container .cancel-btn {
+    width: 150px;
+    margin-left: 35%;
+    margin-top: 1rem;
 }
 
 a svg {
